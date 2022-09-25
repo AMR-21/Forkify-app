@@ -1,0 +1,23 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "Search over 1,000,000 recipes and bookmark your favourites!",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AMR-21/Forkify.git"
+  },
+  "author": "Amr Yasser",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AMR-21/Forkify/issues"
+  },
+  "homepage": "https://github.com/AMR-21/Forkify#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0"
+  }
+}
