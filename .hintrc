@@ -8,6 +8,23 @@
       {
         "label": "off"
       }
+    ],
+    "axe/structure": [
+      "default",
+      {
+        "list": "off"
+      }
+    ],
+    "button-type": "off",
+    "disown-opener": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "backface-visibility",
+          "backdrop-filter"
+        ]
+      }
     ]
   }
 }
