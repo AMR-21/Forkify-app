@@ -8,6 +8,14 @@
       {
         "label": "off"
       }
+    ],
+    "disown-opener": "off",
+    "button-type": "off",
+    "axe/structure": [
+      "default",
+      {
+        "list": "off"
+      }
     ]
   }
 }
