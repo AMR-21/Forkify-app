@@ -131,6 +131,7 @@ const renderRecipe = recipe => {
         </div>
   `;
 
+  console.log(recipeContainer);
   recipeContainer.insertAdjacentHTML('beforeend', html);
 };
 
