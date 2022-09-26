@@ -15,9 +15,5 @@
   "bugs": {
     "url": "https://github.com/AMR-21/Forkify/issues"
   },
-  "homepage": "https://github.com/AMR-21/Forkify#readme",
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.7.0",
-    "parcel": "^2.7.0"
-  }
+  "homepage": "https://github.com/AMR-21/Forkify#readme"
 }
