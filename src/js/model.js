@@ -61,3 +61,11 @@ export const getPageResults = (page = 1) => {
     page * RESULTS_PER_PAGE
   );
 };
+
+export const updateServings = servings => {
+  state.recipe.ingredients.forEach(ing => {
+    ing.quantity *= servings / state.recipe.servings;
+  });
+
+  state.recipe.servings = servings;
+};

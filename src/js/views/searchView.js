@@ -4,7 +4,6 @@ import icons from 'url:../../img/icons.svg'; // parcel 2 - parcel 1 without url:
 class SearchView extends View {
   _parentEl = document.querySelector('.results');
   _searchEl = document.querySelector('.search');
-  _searchContainer = document.querySelector('.search-results');
   _queryInput = document.querySelector('.search__field');
   _errorMessage = 'No recipes found for this query! Please try again';
 
@@ -29,10 +28,12 @@ class SearchView extends View {
   }
 
   #generateHtmlPreview(entry) {
+    const id = window.location.hash.slice(1);
+
     //prettier-ignore
     return `
           <li class="preview">
-            <a class="preview__link" href="#${entry.id}">
+            <a class="preview__link ${entry.id === id ? 'preview__link--active' : ''}" href="#${entry.id}">
               <figure class="preview__fig">
                 <img src="${entry.image}" alt="${entry.title}" />
               </figure>
