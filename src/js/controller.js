@@ -11,8 +11,6 @@ import 'regenerator-runtime/runtime'; // polyfill async/await
 
 ///////////////////////////////////////
 
-alert('Welcome');
-
 const controlRecipes = async () => {
   try {
     const id = window.location.hash.slice(1);
