@@ -1,5 +1,5 @@
 import View from './view.js';
-import icons from 'url:../../img/icons.svg'; // parcel 2 - parcel 1 without url:
+import previewView from './previewView.js';
 
 class SearchView extends View {
   _parentEl = document.querySelector('.results');
@@ -24,26 +24,7 @@ class SearchView extends View {
   }
 
   _generateHtml() {
-    return this._data.map(this.#generateHtmlPreview).join('\n');
-  }
-
-  #generateHtmlPreview(entry) {
-    const id = window.location.hash.slice(1);
-
-    //prettier-ignore
-    return `
-          <li class="preview">
-            <a class="preview__link ${entry.id === id ? 'preview__link--active' : ''}" href="#${entry.id}">
-              <figure class="preview__fig">
-                <img src="${entry.image}" alt="${entry.title}" />
-              </figure>
-              <div class="preview__data">
-                <h4 class="preview__title">${entry.title}</h4>
-                <p class="preview__publisher">${entry.publisher}</p>
-              </div>
-            </a>
-          </li>
-  `;
+    return this._data.map(entry => previewView.render(entry, false)).join('\n');
   }
 }
 
