@@ -73,7 +73,7 @@ export default class View {
         </div>
     `;
 
-    this.clear();
+    this._clear();
     this._parentEl.insertAdjacentHTML('afterbegin', html);
   }
 }
